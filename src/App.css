@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+  background: white;
+  font-family: 'Ubuntu', sans-serif;
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#header{
+  margin: 3% 0 0 0;
+  text-align: center;
+  font-size:5rem;
+  color: rgb(196, 63, 63);
+  font-style: uppercase;
+}
+
+#project-container{
+  margin: 2% auto 50px auto;
+  background: pink;
+  border-radius: 4rem;
+  width: 45rem;
+  height: 40rem;
+  padding: 2rem;
+  box-shadow: 10px 5px 5px grey;
+}
+
+#length-container{
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  font-size: 25px;
+}
+
+#break-label, #session-label{
+  margin: 15px;
+  text-align: center;
+  width: 50%;
+  padding: 0 20px 10px 20px;
+}
+
+#break-decrement, #break-increment, #session-decrement, #session-increment {
+  font-size: 55px;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+#break-decrement, #break-increment{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+ #session-decrement, #session-increment {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#session-decrement,#session-increment:active{
+  transform: scale(0.9);
+}
+
+#break-increment:active{
+  transform: scale(0.9);
+}
+
+#break-decrement:active{
+  transform: scale(0.9);
+}
+
+#break-length, #session-length{
+  font-size: 45px;
+}
+
+/*timer css*/
+#timer-label{
+  /*border: 2px solid linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+  border: 6px solid transparent;
+  border-image: linear-gradient(43deg, #c42424 10%, #C850C0 46%, #fda604 100%) 1;
+  width: 50%;
+  height: 50%;
+  margin: 40px 25% 15px 25%;
+  border-radius: 50%;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+#timer-label > div{
+  padding: 5px;
+  background: none;
+  display: inline-block;
+}
+#timer-label div > span{
+  border-radius: 3px;
+  background: none;
+  display: inline-block;
+}
+
+#timer-label h2{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 30px;
+}
+
+#time-left{
+  margin-top: -10px;
+}
+
+#minute, #second, .hyphen {
+  font-size: 95px;
+  font-weight: 700;
+}
+
+#controls{
+  text-align: center;
+  display: flex;
+  margin: 0 25%;
+  padding: 5px 20%;
+  text-align: center;
+  height: 50px;
+}
+
+#reset{
+  width: 34px;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 28px;
+  cursor: pointer;
+}
+
+#reset:active{
+  transform: scale(0.9);
+}
+
+#start_stop{
+  width: 30px;
+  margin-left: 3px;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#start-stop:active{
+  transform: scale(0.9);
+}
+
+footer p{
+  color: rgb(196, 63, 63);;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+
